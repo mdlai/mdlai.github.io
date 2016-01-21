@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Learning Hearthstone
-tags: data, games
+tags:
+- data
+- games
 ---
 In any competitive game information is a huge advantage.  Imagine if an opponent played with an open hand.  Planning your own turn and planning your future turns would be a piece of cake.
 
