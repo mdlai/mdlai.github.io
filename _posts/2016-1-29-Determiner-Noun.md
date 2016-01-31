@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Determiner Noun: Number
-tags: data
+title: 'Determiner Noun: Number'
+tags:
+- data
 ---
 Since the dawn of time, humanity has sought the answers to what to name their movies if they want to make the most money.  Finally someone has nudged the the space of understanding.
 
