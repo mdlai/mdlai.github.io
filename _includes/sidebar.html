@@ -2,21 +2,21 @@
 
   <!-- Intro -->
     <section id="intro">
-      <a href="{{ site.baseur l}}" class="logo"><img src="{{ site.logo }}" alt="" /></a>
+      <a href="{{ site.baseurl}}" class="logo"><img src="{{ site.logo }}" alt="" /></a>
       <header>
-        <h2>{{ site.tagline }}</h2>
+        <h2><a href = "{{ site.baseurl }}">{{ site.tagline }}</a></h2>
         <p>{{ site.description }}</p>
       </header>
     </section>
 
   <!-- Mini Posts -->
-    <!--
-    <section>
-      <div class="mini-posts">
-    -->
+
+    <!-- <section>
+      <div class="mini-posts"> -->
 
         <!-- Mini Post -->
-          <!--
+        <!--
+
           <article class="mini-post">
             <header>
               <h3><a href="#">Vitae sed condimentum</a></h3>
@@ -25,26 +25,70 @@
             </header>
             <a href="#" class="image"><img src="/images/pic04.jpg" alt="" /></a>
           </article>
-          -->
-    <!--
+
       </div>
-    </section>
-    -->
+    </section> -->
 
   <!-- Posts List -->
     <section>
       <ul class="posts">
-        {% for post in site.posts limit:5 %}
-        <li>
-          <article>
-            <header>
-              <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-              <time class="published" datetime="{{ post.date }}">{{ post.date | date: '%B %d, %Y' }}</time>
-            </header>
-            <a href="{{ post.url }}" class="image"><img src="{{ post.image }}" alt="" /></a>
-          </article>
-        </li>
-        {% endfor %}
+        {% if paginator.page %}
+          {% for post in paginator.posts limit:5 %}
+          <li>
+            <article>
+              <header>
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <time class="published" datetime="{{ post.date }}">{{ post.date | date: '%B %d, %Y' }}</time>
+              </header>
+              <a href="{{ post.url }}" class="image"><img src="{{ post.image }}" alt="" /></a>
+            </article>
+          </li>
+          {% endfor %}
+
+        {% elsif page.is_post %}
+
+          {% for post in site.posts %}
+            {% assign max = forloop.length | minus : 2 %}
+            {% if page.url == post.url %}
+              {% assign current = forloop.index %}
+            {% endif %}
+          {% endfor %}
+
+          {% if current < 3 %}
+            {% assign current = 3 %}
+          {% elsif current > max %}
+            {% assign current = max %}
+          {% endif %}
+
+          {% for post in site.posts %}
+            {% assign last = current | plus : 3 %}
+            {% assign first = current | minus : 3 %}
+            {% if forloop.index > first and forloop.index < last %}
+              <li>
+                <article>
+                  <header>
+                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    <time class="published" datetime="{{ post.date }}">{{ post.date | date: '%B %d, %Y' }}</time>
+                  </header>
+                  <a href="{{ post.url }}" class="image"><img src="{{ post.image }}" alt="" /></a>
+                </article>
+              </li>
+            {% endif %}
+          {% endfor %}
+
+          {% else %}
+          {% for post in site.posts limit : 5 %}
+              <li>
+                <article>
+                  <header>
+                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    <time class="published" datetime="{{ post.date }}">{{ post.date | date: '%B %d, %Y' }}</time>
+                  </header>
+                  <a href="{{ post.url }}" class="image"><img src="{{ post.image }}" alt="" /></a>
+                </article>
+              </li>
+          {% endfor %}
+        {% endif %}
       </ul>
     </section>
 

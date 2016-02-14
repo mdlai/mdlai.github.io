@@ -1,0 +1,20 @@
+---
+layout: page
+---
+
+<div class="row">
+  {% for tag in page.tags %}
+  <div class="6u 12u$(medium)">
+    <h2>{{ tag }}</h2>
+    {% for post in site.tags[tag] %}
+      <article class="mini-post">
+        <header>
+          <h3><a href="#">{{ post.title }}</a></h3>
+          <time class="published" datetime="{{ post.date }}">{{ post.date | date: '%B %d, %Y' }}</time>
+        </header>
+        <a href="{{ post.url }}" class="image"><img src="{{ post.image }}" alt="" /></a>
+      </article>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>

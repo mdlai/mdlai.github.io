@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Learning Hearthstone
+title: 'Learning Hearthstone'
+image: /images/learning-hearthstone/learning-hearthstone.jpg
+subtitle: Making a program to cheat at a video game
 tags:
 - data
 - games
 ---
+
 In any competitive game information is a huge advantage.  Imagine if an opponent played with an open hand.  Planning your own turn and planning your future turns would be a piece of cake.
 
-The big question is...
+The big question is
 
 ## How do we predict our opponent's next move?
 

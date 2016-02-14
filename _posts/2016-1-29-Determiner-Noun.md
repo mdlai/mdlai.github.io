@@ -1,20 +1,25 @@
 ---
 layout: post
 title: 'Determiner Noun: Number'
+image: /images/determiner-noun/determiner-noun.jpg
+subtitle: The adventure of making a really mundane movie title
 tags:
 - data
 ---
+
 Since the dawn of time, humanity has sought the answers to what to name their movies if they want to make the most money.  Finally someone has nudged the the space of understanding.
 
 Beginning with a data set of just movie Titles, Revenue, and Theaters the struggle began, to break down Titles into parts of speech to find the answers I was looking for.  In order to accomplish this I met a friend, "Spacey" that helped me smash my Titles into tiny parts of speech.
 
-![img]({{ site.url }}/assets/luther_images/table.png)
+<div class="12u$"><span class="image fit"><img src="/images/determiner-noun/table.png" alt="" /></span></div>
 
 Armed with my tiny parts of speech, I herded the Movies into bins based on their Total Theater counts.  In one bin small movies with 0-20 theaters, the next bin 20-1000, the final bin 1000+ theaters.  This way all the bins were of roughly equal size.
 
+<span class="image right"> <img src="/images/determiner-noun/bins.png" alt="" /></span>
+
 In order to put my Total Grosses in line, I mushed them all through a natural log, which oddly enough make them more normal.
 
-![img]({{ site.url }}/assets/luther_images/bins.png)
+
 
 As my quest for the answers progressed, I decided to cross my parts of speech with my bins.  Which gave me a new weapon: 56 features.  Again I had to normalize them, in order to make them the same size.  So they'd be a better fit, of course.
 

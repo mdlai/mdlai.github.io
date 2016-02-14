@@ -4,20 +4,20 @@ highlighter:      rouge
 # Setup
 title:            Michael Lai
 tagline:          'Blog is Life'
-description:      'Data Stuff'
+description:      'Data Stuffed'
 url:              http://mdlai.github.io
 baseurl:          /
 permalink:        pretty
-logo:             /images/house.jpg
+logo:             /images/site/house.jpg
 
 
 
 author:
   name:           'Michael Lai'
   url:            https://twitter.com/m_d_lai
-  avatar:         /images/house.jpg
+  avatar:         /images/site/avatar2.jpg
   about:          /about/
-  blurb:          I am a data scientist with a passion for exploring and understanding everything.
+  blurb:          I am a data scientist with a passion for exploring and understanding everything.  I am obsessed with basketball, video games, math, and data.
 
 paginate:         5
 
@@ -32,15 +32,24 @@ google_analytics: UA-72303556-1
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: michael@mdlai.com
+  email: mailto:michael@mdlai.com
   facebook:
   flickr:
-  github: mdlai
+  github: https://github.com/mdlai
   instagram:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/michael-lai-52828a71
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: m_d_lai
+  twitter: https://twitter.com/m_d_lai
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
+
+
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts

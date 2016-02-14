@@ -1,9 +1,12 @@
 ---
 layout: page
 title: About
-description: Data Scientist, Trader, Teacher
+image: /images/site/about2.jpg
+subtitle: Data Scientist, Trader, Teacher
 ---
 
 ### Contact me
 
-[on twitter](https://twitter.com/m_d_lai)
+[by e-mail](mailto:michael@mdlai.com)
+<hr />
+{% include icons.html %}

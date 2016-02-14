@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <article class="post">
   <header>
     <div class="title">
@@ -15,16 +14,24 @@ layout: default
     </div>
   </header>
   <a href="#" class="image featured"><img src="{{ page.image }}" alt="" /></a>
-  <p>{{ content }}.</p>
+  <p>{{ content }}</p>
   <footer>
-    <ul class="actions">
-      <li><a href="#" class="button big">Continue Reading</a></li>
+    <ul class="actions pagination">
+      {% if page.previous %}
+      <li><a href="{{ page.previous.url }}" class="button big previous">Previous Page</a></li>
+      {% else %}
+      <li><a href="" class="disabled button big previous">Previous Page</a></li>
+      {% endif %}
+      {% if page.next %}
+      <li><a href="{{ page.next.url }}" class="button big next">Next Page</a></li>
+      {% else %}
+      <li><a href="" class="disabled button big next">Next Page</a></li>
+      {% endif %}
     </ul>
     <ul class="stats">
-
-      <li><a href="#">General</a></li>
-      <li><a href="#" class="icon fa-heart">28</a></li>
-      <li><a href="#" class="icon fa-comment">128</a></li>
+      {% for tag in page.tags %}
+      <li><a href="#">{{ tag }}</a></li>
+      {% endfor %}
     </ul>
   </footer>
 </article>
