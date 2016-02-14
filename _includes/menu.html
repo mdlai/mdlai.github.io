@@ -1,0 +1,56 @@
+<section id="menu">
+
+  <!-- Search -->
+    <section>
+      <h1><a href="/">Table of Contents</a></h1>
+      <!--
+      <form class="search" method="get" action="#">
+        <input type="text" name="query" placeholder="Search" />
+      </form>
+    -->
+    </section>
+
+  <!-- Links -->
+    <section>
+      <ul class="links">
+        {% assign pages_list = site.pages %}
+        {% for node in pages_list %}
+          {% if node.title != null %}
+            {% if node.layout == "page" or node.layout == "tagpage" %}
+              {% if page.url == node.url %}
+                <li class="active">
+              {% else %}
+                <li>
+              {% endif %}
+                  <a href="{{ node.url }}">
+                    <h3>{{ node.title }}</h3>
+                    <p>{{node.description}}</p>
+                  </a>
+                </li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        {% if page.url == node.url %}
+          <li class="active">
+        {% else %}
+          <li>
+        {% endif %}
+            <a href="{{ site.github.repo }}">
+              <h3>GitHub</h3>
+              <p>Data Science Projects</p>
+            </a>
+          </li>
+      </ul>
+    </section>
+
+  <!-- Actions -->
+    <section>
+      {% include icons.html %}
+      <!--
+      <ul class="actions vertical">
+        <li><a href="#" class="button big fit">Log In</a></li>
+      </ul>
+      -->
+    </section>
+
+</section>

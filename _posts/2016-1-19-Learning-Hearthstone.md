@@ -9,7 +9,7 @@ In any competitive game information is a huge advantage.  Imagine if an opponent
 
 The big question is...
 
-##How do we predict our opponent's next move?
+## How do we predict our opponent's next move?
 
 Our data is going to be 50,000 games of data where we have our opponents sequence of cards played.
 

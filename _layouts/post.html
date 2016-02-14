@@ -2,28 +2,29 @@
 layout: default
 ---
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
+<article class="post">
+  <header>
+    <div class="title">
+      <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+      <p>{{ page.subtitle }}</p>
+    </div>
+    <div class="meta">
+      <time class="published" datetime="{{ page.date }}">{{ page.date | date: '%B %d, %Y' }}</time>
+      <a href="#" class="author"><span class="name">{{ site.author.name }}</span>
+        <img src="{{ site.author.avatar }}" alt="" /></a>
+    </div>
+  </header>
+  <a href="#" class="image featured"><img src="{{ page.image }}" alt="" /></a>
+  <p>{{ content }}.</p>
+  <footer>
+    <ul class="actions">
+      <li><a href="#" class="button big">Continue Reading</a></li>
+    </ul>
+    <ul class="stats">
 
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-  {% for tg in page.tags %}
-    {% for post in site.tags[tg] limit:3 %}
-      {% if page.url != post.url %}
-        <li>
-          <h3>
-            <a href="{{ post.url }}">
-              {{ post.title }}
-              <small>{{ post.date | date_to_string }}</small>
-            </a>
-          </h3>
-        </li>
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-  </ul>
-</div>
+      <li><a href="#">General</a></li>
+      <li><a href="#" class="icon fa-heart">28</a></li>
+      <li><a href="#" class="icon fa-comment">128</a></li>
+    </ul>
+  </footer>
+</article>

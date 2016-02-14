@@ -1,19 +1,23 @@
 # Dependencies
 highlighter:      rouge
 
-# Permalinks
-permalink:        pretty
-
 # Setup
 title:            Michael Lai
-tagline:          'Blog!'
+tagline:          'Blog is Life'
 description:      'Data Stuff'
 url:              http://mdlai.github.io
 baseurl:          /
+permalink:        pretty
+logo:             /images/house.jpg
+
+
 
 author:
   name:           'Michael Lai'
   url:            https://twitter.com/m_d_lai
+  avatar:         /images/house.jpg
+  about:          /about/
+  blurb:          I am a data scientist with a passion for exploring and understanding everything.
 
 paginate:         5
 

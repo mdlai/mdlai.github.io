@@ -1,10 +1,8 @@
 ---
 layout: page
 title: About
-permalink: /about/
+description: Data Scientist, Trader, Teacher
 ---
-
-Data Scientist, Trader, Teacher
 
 ### Contact me
 
