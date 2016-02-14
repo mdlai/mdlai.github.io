@@ -5,7 +5,7 @@ highlighter:      rouge
 title:            Michael Lai
 tagline:          'Blog is Life'
 description:      'Data Stuffed'
-url:              http://mdlai.github.io
+url:              https://mdlai.com
 baseurl:          /
 permalink:        pretty
 logo:             /images/site/house.jpg

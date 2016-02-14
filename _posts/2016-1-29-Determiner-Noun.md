@@ -27,15 +27,15 @@ I took these features and trained them on a ridge (regression).  And what a beau
 
 After training them on the ridge regression, each feature produced a beta I knew I was close to finding the answers.
 
-![img]({{ site.url }}/assets/luther_images/betas.png)
+![img]({{ site.url }}/images/determiner-noun/betas.png)
 
 In order to bait out the answers, I subtracted the high betas minus the low betas for each part of speech.  This was because my low betas were disguised, and were actually the baseline for my comparisons.  
 
 Huzzah!  The answers!
 
-![img]({{ site.url }}/assets/luther_images/widerelease.png)
+![img]({{ site.url }}/images/determiner-noun/widerelease.png)
 
-![img]({{ site.url }}/assets/luther_images/midrelease.png)
+![img]({{ site.url }}/images/determiner-noun/midrelease.png)
 
 For wide release movies I discovered it was best to name a movie with a noun, number, and punctuation.  My guess is the number trend is a result of wide release sequels producing a lot of money.
 
