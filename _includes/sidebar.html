@@ -29,6 +29,9 @@
     </nav>
   </div>
   <div class = "container sidebar-sticky">
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == '/archive/' %} active{% endif %}" href="/archive/">Archive</a>
+    </nav>
     {% include svg-icons.html %}
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>

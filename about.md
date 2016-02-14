@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Teacher, Trader, Data Scientist
+Data Scientist, Trader, Teacher
 
 ### Contact me
 
