@@ -16,7 +16,7 @@ The big question is
 
 Our data is going to be 50,000 games of data where we have our opponents sequence of cards played.
 
-![png]({{ site.url }}/images/learning-hearthstonedata.png)
+![png]({{ site.url }}/images/learning-hearthstone//data.png)
 
 To do this we're going to use n-grams.  N-grams, similar to the word engram, stores our data in a structure where we can easily recall it for relevant information.  
 
@@ -28,11 +28,11 @@ N-grams are comprised of continuous strings pulled from a longer continuous stri
 
 Using the n-grams for prediction is just a stone throw away.  Suppose we want to know what comes after a leper gnome based on our data.
 
-![png]({{ site.url }}/images/learning-hearthstoneprediction.png)
+![png]({{ site.url }}/images/learning-hearthstone/prediction.png)
 
 Based on our data we see two cards that occur after a leper gnome.  So we apply equal weight and each has a 50% chance of being played next.
 
-![png]({{ site.url }}/images/learning-hearthstoneapplication.png)
+![png]({{ site.url }}/images/learning-hearthstone/application.png)
 
 Applying this model to Hearthstone requires a slight modification.  Since we can't interrupt our opponent's turn it's more important to predict what their next turn will be rather than what card they'll play next.  The application then looks like the following.
 
