@@ -2,10 +2,11 @@
 layout: post
 title: 'HTML5 To Jekyll'
 image: /images/blog-about/blog-about.png
-subtitle: A blog about blogs
+subtitle: A blog post about making blogs
 tags:
 - code
 ---
+Today marks the end of my 5th week at Metis, so I decided what better way to celebrate than spend my weekend re-working my blog!
 
 Making Jekyll work with HTML5 is a bit of a headache.  I hope my pain can be your gain.
 

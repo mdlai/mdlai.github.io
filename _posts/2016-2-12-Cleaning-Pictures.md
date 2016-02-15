@@ -7,8 +7,6 @@ tags:
 - data
 ---
 
-Today marks the end of my 5th week at Metis, so I decided what better way to celebrate than spend my weekend re-working my blog!
-
 This week I discovered that
 
 ### Image preprocessing is a ton of work.
