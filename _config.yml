@@ -39,7 +39,7 @@ footer-links:
   instagram:
   linkedin: https://www.linkedin.com/in/michael-lai-52828a71
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: /atom.xml # just type anything here for a working RSS icon
   twitter: https://twitter.com/m_d_lai
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
