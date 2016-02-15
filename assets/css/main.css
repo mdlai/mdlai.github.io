@@ -1581,12 +1581,12 @@
 		margin: 0 0 2em 0;
 	}
 
-		pre code {
-			display: block;
-			line-height: 1.75em;
-			padding: 1em 1.5em;
-			overflow-x: auto;
-		}
+	pre code {
+		display: block;
+		line-height: 1.75em;
+		padding: 1em 1.5em;
+		overflow-x: auto;
+	}
 
 	hr {
 		border: 0;
@@ -1652,6 +1652,34 @@
 			border-radius: 100%;
 			display: block;
 			width: 4em;
+		}
+
+		.author.egg img {
+			border-radius: 100%;
+			display: block;
+			width: 4em;
+			-moz-transition: -moz-transform 0.2s ease-out;
+			-webkit-transition: -webkit-transform 0.2s ease-out;
+			-ms-transition: -ms-transform 0.2s ease-out;
+			transition: transform 0.2s ease-out;
+		}
+
+		.author.egg:hover img {
+			-moz-transform: scale(3.05);
+			-webkit-transform: scale(3.05);
+			-ms-transform: scale(3.05);
+			transform: scale(3.05);
+		}
+
+		.author.egg .text {
+			display: block;
+			bottom: 5em;
+			font-size: 2em;
+			visibility: hidden;
+		}
+
+		.author.egg:hover .text{
+			visibility:visible
 		}
 
 		.author:hover .name {
