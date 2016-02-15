@@ -7,4 +7,5 @@ tags:
 - data
 - games
 - silly
+- code
 ---
