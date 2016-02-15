@@ -7,9 +7,7 @@ tags:
 - data
 ---
 
-This week I discovered that
-
-### Image preprocessing is a ton of work.
+This week I discovered that image preprocessing is a ton of work.
 
 My current project is creating a model that predicts digits using the MNIST data set.
 
