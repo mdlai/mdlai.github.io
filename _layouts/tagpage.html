@@ -5,7 +5,7 @@ layout: page
 <div class="row">
   {% for tag in page.tags %}
   <div class="6u 12u$(medium)">
-    <h2>{{ tag }}</h2>
+    <h2><a name="{{ tag }}">{{ tag }}</a></h2>
     {% for post in site.tags[tag] %}
       <article class="mini-post">
         <header>
