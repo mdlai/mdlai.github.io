@@ -26,28 +26,28 @@ For example having a header is necessary, but adding specific HTML for say a spe
 In terms of customization, I spent far too much time wresting with the liquid code.  I really hope I didn't miss the easy way, but finding indexes and going through arrays was a monstrosity.  
 <pre><code>
   #Finds the index of the current page as well as the total for the number of posts.
-  \{% for post in site.posts %\}
-    \{% assign max = forloop.length | minus : 2 %\}
-    \{% if page.url == post.url %\}
-      \{% assign current = forloop.index %\}
-    \{% endif %\}
-  \{% endfor %\}
+   for post in site.posts
+     assign max = forloop.length | minus : 2
+     if page.url == post.url
+       assign current = forloop.index
+     endif
+   endfor
 
   #If the post is less than 3 from the start or greater than 3 from the end, use the first 5 pages or last 5 respectively.
-  \{% if current < 3 %\}
-    \{% assign current = 3 %\}
-  \{% elsif current > max %\}
-    \{% assign current = max %\}
-  \{% endif %\}
+   if current < 3
+     assign current = 3
+   elsif current > max
+     assign current = max
+   endif
 
   #For each post use two posts forward in time and two backwards in as the links in the sidebar.
-  \{% for post in site.posts %\}
-    \{% assign last = current | plus : 3 %\}
-    \{% assign first = current | minus : 3 %\}
-    \{% if forloop.index > first and forloop.index < last %\}
+   for post in site.posts
+     assign last = current | plus : 3
+     assign first = current | minus : 3
+     if forloop.index > first and forloop.index < last
       <!-- Show Post -->
-    \{% endif %\}
-  \{% endfor %\}
+     endif
+   endfor
 </code></pre>
 This little bit was necessary just to create chronologically adjacent sidebar links further than 1 post away.
 
