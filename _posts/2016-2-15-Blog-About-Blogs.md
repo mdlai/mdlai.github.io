@@ -19,7 +19,7 @@ There's a great tutorial on how to convert a theme to [here](http://jekyll.tips/
 4. Customize.
 
 ### Tips
-I'll skip to number three since the first two should be pretty straight forward.  The best tip I have for past me is to break up each section into an \_include.html.  It adds a lot of flexibility in how your layouts are designed.  
+I'll skip to number three since the first two should be pretty straight forward.  The best tip I have for past me is to break up each section into an \_include.  It adds a lot of flexibility in how your layouts are designed.  
 
 For example having a header is necessary, but adding specific HTML for say a specific menu allows you to have slightly different headers to suit your needs.
 
@@ -33,7 +33,8 @@ In terms of customization, I spent far too much time wresting with the liquid co
      endif
    endfor
 
-  #If the post is less than 3 from the start or greater than 3 from the end, use the first 5 pages or last 5 respectively.
+  #If the post is less than 3 from the start or greater than 3 from the end,
+  #use the first 5 pages or last 5 respectively.
    if current < 3
      assign current = 3
    elsif current > max
@@ -53,7 +54,6 @@ This little bit was necessary just to create chronologically adjacent sidebar li
 
 Finally, copy elements from other themes.  Tons of HTML5 based themes are available [here](http://jekyll.tips/templates/) and they're already fit for jekyll
 
-### Conclusion
 Liquid is really annoying and Jekyll is really amazing.
 
 
