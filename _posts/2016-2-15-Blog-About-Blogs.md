@@ -24,7 +24,7 @@ I'll skip to number three since the first two should be pretty straight forward.
 For example having a header is necessary, but adding specific HTML for say a specific menu allows you to have slightly different headers to suit your needs.
 
 In terms of customization, I spent far too much time wresting with the liquid code.  I really hope I didn't miss the easy way, but finding indexes and going through arrays was a monstrosity.  
-```
+<pre><code>
   #Finds the index of the current page as well as the total for the number of posts.
   {% for post in site.posts %}
     {% assign max = forloop.length | minus : 2 %}
@@ -48,7 +48,7 @@ In terms of customization, I spent far too much time wresting with the liquid co
       <!-- Show Post -->
     {% endif %}
   {% endfor %}
-```
+</code></pre>
 This little bit was necessary just to create chronologically adjacent sidebar links further than 1 post away.
 
 Finally, copy elements from other themes.  Tons of HTML5 based themes are available [here](http://jekyll.tips/templates/) and they're already fit for jekyll
