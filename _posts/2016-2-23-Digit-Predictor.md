@@ -8,13 +8,15 @@ tags:
 ---
 For my latest magic trick (Metis project 3), I attempted to build a model that could predict hand written digits.
 
-Using Tensorflow, Flask, and Heroku, I created an app that can guess numbers drawn on it.  The instructions are simple, just click on the grid and draw a number.
+Using Tensorflow, Flask, and Heroku, I created an app that can guess numbers drawn on it.
 
 <div class="12u$"><span class="image fit"><img src="/images/lucky-number/presentation.jpg" alt="" /></span></div>
 
 Here's me presenting my app!
 
 The model is a convolutional neural network trained on the MNIST data set.  The next step would be for me to store the drawn data and add it to my model... maybe when I have a bit more time.
+
+The instructions are simple, just click on the grid and draw a number.
 
 <iframe
  src="https://number-predictor.herokuapp.com/"
