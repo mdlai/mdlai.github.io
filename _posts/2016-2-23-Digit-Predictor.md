@@ -16,7 +16,7 @@ Here's me presenting my app!
 
 The model is a convolutional neural network trained on the MNIST data set.  The next step would be for me to store the drawn data and add it to my model... maybe when I have a bit more time.
 
-It kinda sucks at guessing 9s and 0s, a consequence of a model that's over fit to it's specific training data.  Maybe adding some deformations to the dataset would improve performance.
+It kinda sucks at guessing 9s and 0s, a consequence of a model that's over fit to its specific training data.  Maybe adding some deformations to the dataset would improve performance.
 
 The instructions are simple, just click on the grid and draw a number.  
 
