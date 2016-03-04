@@ -8,7 +8,7 @@ tags:
 ---
 Draftexpress.com does a lot of analysis.  Sometimes I wonder if it's all the same or if they're actually coming up with some new and novel way to describe people every time.
 
-I scraped 761 player profile pages and used Latent Dirichlet Allocation (LDA) to model what topics writers were talking about.
+I scraped 761 player profile pages, such as [this one](http://www.draftexpress.com/profile/Karl-Towns-61831/), from between 2000-2015 and used Latent Dirichlet Allocation (LDA) to model what topics writers were talking about.
 
 ![img]({{ site.url }}/images/nba-text/topics.png)
 
