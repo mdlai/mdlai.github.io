@@ -8,11 +8,13 @@ tags:
 ---
 Draftexpress.com does a lot of analysis.  Sometimes I wonder if it's all the same or if they're actually coming up with some new and novel way to describe people every time.
 
-After scraping 761 player profile pages I used Latent Dirichlet Allocation (LDA) to model what topics writers were talking about.
+I scraped 761 player profile pages and used Latent Dirichlet Allocation (LDA) to model what topics writers were talking about.
 
 ![img]({{ site.url }}/images/nba-text/topics.png)
 
-The chart below helped me better understand my data.  It's interactive, so I could slide over to see how each cluster was represented in terms of year, pick, position, height, and weight.
+The chart below helped me better understand my data.
+
+It's interactive!  Click on the vertical axis to filter out different lines.  It's an easy way to filter each cluster in terms of year, pick, position, height, and weight.
 
 <iframe src="/images/nba-text/index.html" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="800"></iframe>
 
