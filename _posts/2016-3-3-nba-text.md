@@ -18,12 +18,18 @@ It's interactive!  Click on the vertical axis to filter out different lines.  It
 
 <iframe src="/images/nba-text/index.html" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="800"></iframe>
 
-After some fiddling I noticed a few things.  The clusters are well defined in terms of position and somewhat defined in terms of year.  The position makes intuitive sense.  Positions are amongst the most frequent words in each topic.
+After some fiddling I noticed a few things.  Positions, along with their desirable attributes, are amongst the most frequent words in each topic.
 
-But the years was less obvious.  I dug around and found that the phrase midrange has an odd distribution over time.
+You can see that the topics accurately categorized each position.
+![img]({{ site.url }}/images/nba-text/byposition.png)
+
+There's also a very odd relationship between the clusters and the years that fall into those clusters.
+![img]({{ site.url }}/images/nba-text/byyear.png)
+
+Since the two clusters containing these years also both contained the phrase mid range, I dug into the frequency of the occurrence of midrange.
 
 ![img]({{ site.url }}/images/nba-text/midrange.png)
 
 The usage of the phrase mid range in describing players is going out of style.  Today's NBA is focused on efficiency, and it seems like writers are following that trend too.
 
-No one cares about midrange basketball anymore.  So long Kobe and MJ.  Hello Steph Curry.
+Apparently no one cares about midrange basketball anymore, not even NBA writers.  So long Kobe and MJ.  Hello Steph Curry.
