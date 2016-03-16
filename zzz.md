@@ -3,6 +3,7 @@ layout: page
 title: About
 image: /images/site/about2.jpg
 subtitle: Data Scientist, Trader, Teacher
+permalink: /about/
 ---
 
 ### Contact me
