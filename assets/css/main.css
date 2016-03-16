@@ -3317,8 +3317,9 @@
 	@media screen and (max-width: 1280px) {
 
 		#intro {
-			margin: 0 0 3em 0;
-			text-align: center;
+			display: none;
+			/*margin: 0 0 3em 0;
+			text-align: center;*/
 		}
 
 			#intro header h2 {
@@ -3332,7 +3333,9 @@
 	}
 
 	@media screen and (max-width: 736px) {
-
+		#intro {
+			display: none;
+			}
 		#intro {
 			margin: 0 0 1.5em 0;
 			padding: 1.25em 0;

@@ -3,8 +3,8 @@ highlighter:      rouge
 
 # Setup
 title:            Michael Lai
-tagline:          'Reticulating Splines'
-description:      'Data science for the people'
+tagline:          'Breaking Games'
+description:      'Solving problems with data'
 url:              http://mdlai.github.io
 baseurl:          /
 permalink:        pretty
