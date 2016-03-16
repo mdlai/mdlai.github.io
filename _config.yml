@@ -3,8 +3,8 @@ highlighter:      rouge
 
 # Setup
 title:            Michael Lai
-tagline:          'Blog is Life'
-description:      'Data Stuffed'
+tagline:          'Reticulating Splines'
+description:      'Data science for the people'
 url:              http://mdlai.github.io
 baseurl:          /
 permalink:        pretty
@@ -17,6 +17,8 @@ author:
   url:            https://twitter.com/m_d_lai
   avatar:         /images/site/avatar2.jpg
   about:          /about/
+  applications:   /applications/
+  categories:     /categories/
   blurb:          "I am a data scientist with a passion for exploring and understanding everything. I love basketball, video games, math, and data."
 
 paginate:         5

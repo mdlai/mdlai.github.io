@@ -8,11 +8,13 @@ layout: default
       <p>{{ page.subtitle }}</p>
     </div>
     <div class="meta">
-      <time class="published" datetime="{{ page.date }}">{{ page.date | date: '%B %d, %Y' }}</time>
+      <time class="published" datetime="{{ page.date }}">{{ site.time | date: '%B %d, %Y' }}</time>
       <a href="{{ site.author.about }}" class="author egg"><p class="text">AHH!</p><span class="name">{{ site.author.name }}</span>
         <img src="{{ site.author.avatar }}" alt="" /></a>
     </div>
   </header>
-  <a href="#" class="image featured"><img src="{{ page.image }}" alt="" /></a>
+  {% if page.image != null %}
+    <a href="#" class="image featured"><img src="{{ page.image }}" alt="" /></a>
+  {% endif %}
   <p>{{ content }}</p>
 </article>

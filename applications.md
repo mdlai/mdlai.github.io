@@ -1,0 +1,17 @@
+---
+layout: page
+title: 'Applications'
+image: 
+subtitle: My web applications
+permalink: /applications/
+
+---
+<iframe
+ src="https://number-predictor.herokuapp.com/"
+ width="100%" height="800">
+  <p>
+    <a href="https://number-predictor.herokuapp.com/">
+      Fallback link for browsers that, unlikely, don't support frames
+    </a>
+  </p>
+</iframe>

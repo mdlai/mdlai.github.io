@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 'Lucky Guess'
+title: 'Predicting Numbers'
 image: /images/lucky-number/guess-my-number.jpg
-subtitle: Machine learning is pretty much black magic
+subtitle: Neural Networks producing red hot predictions
 tags:
 - data
 ---
-For my latest magic trick (Metis project 3), I attempted to build a model that could predict hand written digits.
+Convolutional neural networks can read your mind... or just your handwriting.
 
 Using Tensorflow, Flask, and Heroku, I created an app that can guess numbers drawn on it.
 

@@ -16,7 +16,9 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-    {% if page.url == node.url %}
+
+
+    {% if page.url == {{ site.github.repo}} %}
       <li class="active">
     {% else %}
       <li>
