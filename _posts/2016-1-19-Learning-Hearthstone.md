@@ -32,9 +32,9 @@ Using the n-grams for prediction is just a stone throw away.  Suppose we want to
 
 Based on our data we see two cards that occur after a leper gnome.  So we apply equal weight and each has a 50% chance of being played next.
 
-![png]({{ site.url }}/images/learning-hearthstone/application.png)
-
 Applying this model to Hearthstone requires a slight modification.  Since we can't interrupt our opponent's turn it's more important to predict what their next turn will be rather than what card they'll play next.  The application then looks like the following.
+
+![png]({{ site.url }}/images/learning-hearthstone/application.png)
 
 The guy that implemented the model few other small tweaks and you can read more about it [here!](https://www.elie.net/blog/hearthstone/predicting-hearthstone-opponent-deck-using-machine-learning "Predicting Hearthstone")
 
