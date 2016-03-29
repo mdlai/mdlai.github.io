@@ -3156,13 +3156,13 @@
 				padding: 0 0.5em 0 0;
 			}
 
-		@media screen and (max-width: 980px) {
+		/*@media screen and (max-width: 980px) {
 
 			#header .links {
 				display: none;
 			}
 
-		}
+		}*/
 
 		@media screen and (max-width: 736px) {
 

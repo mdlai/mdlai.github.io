@@ -3,7 +3,7 @@ highlighter:      rouge
 
 # Setup
 title:            Michael Lai
-tagline:          'Breaking Games'
+tagline:          'Blog is Life'
 description:      'Solving problems with data'
 url:              http://mdlai.github.io
 baseurl:          /

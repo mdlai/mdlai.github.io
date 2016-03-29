@@ -6,7 +6,7 @@ subtitle: Neural Networks producing red hot predictions
 tags:
 - data
 ---
-Convolutional neural networks can read your mind... or just your handwriting.
+Lately I've been building a model that can read your mind... or just your handwriting.
 
 Using Tensorflow, Flask, and Heroku, I created an app that can guess numbers drawn on it.
 
