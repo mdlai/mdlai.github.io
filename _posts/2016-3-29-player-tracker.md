@@ -53,6 +53,6 @@ To make the translation more versatile, I need to improve the handling of court 
 
 Next leveraging the temporal nature of film, I can reduce jittering by interpolating points between frames.  A Kalman filter might be applicable here.  
 
-Finally I want to create a time series where I can link rectangles to each other.  My idea for this is to use the idea of a markov chain in reverse.  For example in frame 1 I have 10 known boxes.  In frame 2 I would take each box and assign it a probability of being each one of the 10 boxes based on position and color.  Then I would have a function to maximize the sum of the total probability where each box is uniquely mapped to one in the previous frame.
+Finally I want to create a time series where I can link rectangles to each other.  My idea for this is to use either the Kalman filter or a HMM to create the continuous sequence of coordinates based on a probability function including distance and color.
 
 So there's plenty of future work to do, and if you'd like to take a look at the code and try some of it for yourself check it out on my [github](https://github.com/mdlai/player_tracker).
