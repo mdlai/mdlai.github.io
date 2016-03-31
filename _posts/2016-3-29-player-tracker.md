@@ -24,9 +24,9 @@ After a series of filters, we find probabilistic Hough lines.  Using the baselin
 ![img]({{ site.url }}/images/player-tracker/transform.png)
 
 ### Player Identification
-The next challenge we need to address is identifying players in each frame.  Issues such as overlapping players and distorted lighting make this a significant challenge.  I applied a convolutional neural network based on googLe overfeat, to make identify players.
+The next challenge we need to address is identifying players in each frame.  Issues such as overlapping players and distorted lighting make this a significant challenge.  I applied a convolutional neural network based on [OverFeat](http://www.image-net.org/challenges/LSVRC/2013/slides/overfeat_ilsvrc2013.pdf).  The model is implemented using TensorBox and creates bounding boxes on identified players.
 
-Here's a Youtube video one of my earlier prototypes applied to a [Youtube highlight reel](https://www.youtube.com/watch?v=eZK2_-rIzJE).
+Here's a Youtube video one of the early iterations applied to a [Youtube highlight reel](https://www.youtube.com/watch?v=eZK2_-rIzJE).
 <iframe width="420" height="315" src="https://www.youtube.com/embed/Qd8l2MbkKnM" frameborder="0" allowfullscreen></iframe>
 
 The detection model has a parameter for threshold which allows less confident boxes to be included.  By reducing this threshold to 30% confidence, I increased my recall by 40% with a loss in precision.  The false positives will be filtered out in the next stage.
