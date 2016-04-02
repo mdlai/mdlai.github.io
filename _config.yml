@@ -4,7 +4,7 @@ highlighter:      rouge
 # Setup
 title:            Michael Lai
 tagline:          'Blog is Life'
-description:      'Solving problems with data'
+description:      'Break things; solve problems'
 url:              http://mdlai.github.io
 baseurl:          /
 permalink:        pretty
@@ -19,7 +19,7 @@ author:
   about:          /about/
   applications:   /applications/
   categories:     /categories/
-  blurb:          "I am a data scientist with a passion for exploring and understanding everything. I love basketball, video games, math, and data."
+  blurb:          "I am a data scientist with a passion for exploring and understanding everything.  My favorite hobby is finding optimal (broken) strategies in games."
 
 paginate:         5
 
