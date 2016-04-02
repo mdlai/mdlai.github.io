@@ -9,7 +9,7 @@ tags:
 I wanted to create a system that could track players in a basketball clip and translate them to a coordinate grid.
 
 ### Background
-This kind of motion tracking already exists in the form of SportVu.  But the aim of my project was to use the accessibility of YouTube clips to create my player tracking.
+This kind of motion tracking already exists in the form of SportVU.  But the aim of my project was to use the accessibility of YouTube clips to create my player tracking.
 
 By satisfying this constraint the system would have the potential to be applied in college stadiums and foreign leagues where $100,000 installation of 6 cameras just isn't feasible.
 
@@ -44,7 +44,7 @@ When all these steps are applied to each frame of the video, the video can be re
 
 There's a lot of room for improvement here.  As you can see players cut in and cut out.  Also the coordinates have significant noise.
 
-The takeaway is that each player can be mapped to a location on the court, and given
+The takeaway is that each player can be mapped to a location on the court, based on their position on the screen and the landmarks on the court.
 
 ### Future work
 The model is trained on only 75 frames of training data.  I'd definitely look here to begin with improvements.

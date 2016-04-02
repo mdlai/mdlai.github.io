@@ -17,3 +17,6 @@ May take ~15 seconds to load.
     </a>
   </p>
 </iframe>
+
+# Player Tracker
+![img]({{ site.url }}/images/player-tracker/animate.gif)
